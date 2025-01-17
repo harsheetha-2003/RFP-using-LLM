@@ -10,11 +10,8 @@ pdfplumber - Used for extracting text from PDF files.
 BeautifulSoup - Part of the bs4 package, used for parsing and extracting text from HTML files.
 pandas - Used for organizing extracted data into tabular format and saving it as a CSV file.
 Install the required libraries using pip:
+<img width="541" alt="image" src="https://github.com/user-attachments/assets/7440658e-e65a-40f8-9b31-1fc0b1ea63aa" />
 
-bash
-Copy
-Edit
-pip install pdfplumber beautifulsoup4 pandas
 Functions:
 1. process_pdf(file_path)
 Purpose: Extracts text from a PDF file.
@@ -39,17 +36,9 @@ Output: Saves the information in a CSV file with two columns: "Field" and "Value
 Purpose: A wrapper function that processes a single document (either PDF or HTML), extracts text, sends it to Groq API, and saves the extracted information into a CSV file.
 Input: File path of the document, document type ("pdf" or "html"), output CSV file name.
 Output: A CSV file containing the extracted information.
-Example Usage:
-For a PDF File:
-python
-Copy
-Edit
-process_document("/content/Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf", "pdf", "output_pdf.csv")
-For an HTML File:
-python
-Copy
-Edit
-process_document("/content/Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html", "html", "output_html.csv")
+
+<img width="548" alt="image" src="https://github.com/user-attachments/assets/d3489ed1-9409-4ab0-945d-b4737afed8a7" />
+
 This will extract the relevant details from the PDF or HTML document and save it as a CSV file.
 
 Output:
@@ -57,16 +46,4 @@ The output will be saved in a CSV file with two columns:
 
 Field: The extracted data field (e.g., "Bid Number", "Title", etc.)
 Value: The corresponding value extracted from the document.
-Example output CSV format:
 
-csv
-Copy
-Edit
-Field,Value
-Bid Number,12345
-Title,Student and Staff Computing Devices
-Due Date,2025-01-30
-...
-Notes:
-Ensure that the Groq API client is properly set up and authenticated before running the script.
-The model "llama-3.3-70b-versatile" is used by default, but you can specify a different model if needed.
