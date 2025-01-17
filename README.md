@@ -1,5 +1,11 @@
 # RFP-using-LLM
 The goal is to extract structured information similar to the a required structure:
+<img width="296" alt="image" src="https://github.com/user-attachments/assets/5a7b3a50-12d8-40e6-bda3-50d9632cfc3d" />
+
+
+
+NOTE: LLM ITSELF IS ENOUGH TO EXTRACT INFORMATION ,IF I AM USING NLTK AND SPACY ,IT REQUIRES DTASET FROM HUGGING FACE THAT IS NOT ABLE TO DOWNLOAF MORE THAN 80 GB WHICH EXCEEDS THE FILE SIZE ,WHAT I HAVE IMPLEMENTED IS OF LLM USING GORQ API KEY
+
 Document Text Extraction and Information Extraction using Groq API
 This Python script is designed to extract text from PDF and HTML documents and use the Groq API to extract structured information from them. It then saves the extracted data into a CSV file for further analysis.
 
@@ -47,3 +53,4 @@ The output will be saved in a CSV file with two columns:
 Field: The extracted data field (e.g., "Bid Number", "Title", etc.)
 Value: The corresponding value extracted from the document.
 
+NOTE: LLM ITSELF IS ENOUGH TO EXTRACT INFORMATION ,IF I AM USING NLTK AND SPACY ,IT REQUIRES DTASET FROM HUGGING FACE THAT IS NOT ABLE TO DOWNLOAF MORE THAN 80 GB WHICH EXCEEDS THE FILE SIZE ,WHAT I HAVE IMPLEMENTED IS OF LLM USING GORQ API KEY 
